@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MazeObjects>
+    <floor>
+	<representation>f</representation>
+	<blocksMovement>false</blocksMovement></floor>
+    <wall>
+	<representation>w</representation>
+	<blocksMovement>true</blocksMovement>
+	<stackable>false</stackable></wall>
+   <closedDoor>
+	<blocksMovement>true</blocksMovement>
+	<representation>d</representation></closedDoor>
+    <openDoor>
+	<blocksMovement>false</blocksMovement>
+	<representation>d</representation></openDoor>
+</MazeObjects>
