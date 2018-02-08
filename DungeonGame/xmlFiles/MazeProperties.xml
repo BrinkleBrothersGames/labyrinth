@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MazeProperties wallSize="4">
+    <xCells>10</xCells>
+    <yCells>4</yCells>
+    <roomProportion>0.4</roomProportion>
+    <idealRoomArea>4</idealRoomArea>
+    <minRoomArea>2</minRoomArea>
+    <idealNumberOfCorners>4</idealNumberOfCorners>
+    <cornerWeighting>0.04</cornerWeighting>
+    <idealNumberOfDoors>1</idealNumberOfDoors>
+    <doorWeighting>0.04</doorWeighting>
+    <surfaceAreaWeighting>0.04</surfaceAreaWeighting>
+    <cellSize></cellSize></MazeProperties>

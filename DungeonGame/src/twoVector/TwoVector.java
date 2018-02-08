@@ -13,8 +13,7 @@ public class TwoVector {
 		this.x = x;
 		this.y = y;
 	}
-	
-	
+
 	/**
      * 
      * @param maxX
@@ -26,43 +25,41 @@ public class TwoVector {
     	this.x = rand.nextInt(maxX);
     	this.y = rand.nextInt(maxY);
     }
-    
-    
+
     public TwoVector(TwoVector v) {
     	this.x = new Integer(v.x);
     	this.y = new Integer(v.y);
     }
-	
-    
+
 	public TwoVector() {
 		this.x = 0;
 		this.y = 0;
 	}
-	
+
 	public int getX() {
 		return x;
 	}
+
 	public void setX(int x) {
 		this.x = x;
 	}
+
 	public int getY() {
 		return y;
 	}
+
 	public void setY(int y) {
 		this.y = y;
 	}
-	
-	
+
 	public TwoVector add(TwoVector v) {
 		return new TwoVector(x + v.x, y + v.y);
 	}
-	
-	
+
 	public TwoVector minus(TwoVector v) {
 		return new TwoVector(x - v.x, y - v.y);
 	}
-	
-	
+
 	/**
 	 * 
 	 * @return	Coordinates with x increased by one.
@@ -70,7 +67,7 @@ public class TwoVector {
 	public TwoVector plusX() {
 		return new TwoVector(x+1, y);
 	}
-	
+
 	/**
 	 * 
 	 * @return	Coordinates with y increased by one.
@@ -78,7 +75,7 @@ public class TwoVector {
 	public TwoVector plusY() {
 		return new TwoVector(x, y+1);
 	}
-	
+
 	/**
 	 * 
 	 * @return	Coordinates with x decreased by one.
@@ -86,7 +83,7 @@ public class TwoVector {
 	public TwoVector minusX() {
 		return new TwoVector(x-1, y);
 	}
-	
+
 	/**
 	 * 
 	 * @return  Coordinates with y decreased by one.
@@ -94,8 +91,7 @@ public class TwoVector {
 	public TwoVector minusY() {
 		return new TwoVector(x, y-1);
 	}
-	
-	
+
 	/**
 	 * 
 	 * @return  All coordinates adjacent to given coords, starting with positive y direction, and moving clockwise around.
@@ -112,12 +108,11 @@ public class TwoVector {
 		adj.add(this.minusX().plusY());
 		return adj;
 	}
-	
-	
+
 	public double magnitude() {
 		return (Math.sqrt((x * x) + (y * y)));
 	}
-	
+
 	public TwoVector multiply(int factor) {
 		return new TwoVector(x * factor, y * factor);
 	}
@@ -140,8 +135,7 @@ public class TwoVector {
 		result = prime * result + y;
 		return result;
 	}
-	
-	
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
